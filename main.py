@@ -1,4 +1,9 @@
 import random
+import urllib.request
+# Download from internet the words data into hard disk
+url = "https://raw.githubusercontent.com/Ramanan17/randomText/main/words.txt"
+Filename="words.txt"
+urllib.request.urlretrieve(url,Filename)
 
 # Createe a function that will take no arguments. The purpose of the function is to generate a random word from a list of five words that you make up.   Return the random word to the caller.
 def getRandomWord():
